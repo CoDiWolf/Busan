@@ -30,7 +30,7 @@ public class fCommentService {
 		//replyCnt + 1
 		FreeBoard b =  fboardRepository.findById(comment.getFreeboard().getNum()).get();
 		b.setReplycnt(b.getReplycnt()+1);
-		
+		//??
 		
 		//SQL
 		fcommentRepository.insert(
