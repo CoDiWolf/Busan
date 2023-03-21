@@ -21,7 +21,7 @@ public class PrincipalDetails implements UserDetailsService {
 	   System.out.println("loadUserByUsername");
 	   Member member =   mRepository.findByUsername(username);
 	  if(member ==null) return null;
-	  // �쉶�썝�씠�씪硫� �떆�걧由ы떚媛� �쟻�슜�릺 User 由ы꽩
+	  // 占쎌돳占쎌뜚占쎌뵠占쎌뵬筌롳옙 占쎈뻻占쎄괠�뵳�뗫뼒揶쏉옙 占쎌읅占쎌뒠占쎈┷ User �뵳�뗪쉘
 	  PrincipalUser puser = new PrincipalUser(member);
 	  System.out.println("puser :" + puser);
 		return puser;
